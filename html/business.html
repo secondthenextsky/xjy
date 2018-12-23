@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="../js/head.js"></script>
+    <title>商家详情</title>
+</head>
+<body>
+    <script src="../js/nav.js"></script>
+    <div style="margin-top: 60px;"></div>
+    <div class="bs-example bs-example-tabs" data-example-id="togglable-tabs">
+        <ul class="nav nav-tabs" id="myTabs" role="tablist">
+            <li role="presentation" class="active">
+                <a href="#businesslist" id="businesslist-tab" role="tab" data-toggle="tab" aria-controls="businesslist"
+                   aria-expanded="true">商家信息（后向餐厅）</a>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade active in" role="tabpanel" id="businesslist" aria-labelledby="businesslist-tab">
+                <div class="bs-example" data-example-id="panel-without-body-with-table" style="margin-top: 10px;">
+                    <div class="panel panel-default">
+                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingOne">
+                                    <h4 class="panel-title">
+                                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            门店信息
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                    <div class="panel-body">
+                                        <table>
+                                            <tr>
+                                                <td>商家id：</td>
+                                                <td>1</td>
+                                                <td>商家名称：</td>
+                                                <td><input class="form-control" type="text" value="后向餐厅"></td>
+                                                <td>地址：</td>
+                                                <td><input class="form-control" type="text" value="东门左转第一家"></td>
+                                                <td>排名：</td>
+                                                <td><select class="form-control"><option>1</option><option>2</option><option>3</option></select></td>
+                                            </tr>
+                                            <tr>
+                                                <td>营业时间：</td>
+                                                <td><input class="form-control" type="text" value="9:00-23:00"></td>
+                                                <td>状态：</td>
+                                                <td><select class="form-control"><option>营业中</option><option>休息中</option></select></td>
+                                                <td>联系方式：</td>
+                                                <td><input class="form-control" type="text" value="13800000000"></td>
+                                                <td></td>
+                                                <td><button type="button" class="btn btn-primary">提交更改</button></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingTwo">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            菜品管理
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                    <div class="panel-body">
+                                        <table class="table">
+                                            <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>菜品名称</th>
+                                                <th>类别</th>
+                                                <th>单价（元/件）</th>
+                                                <th>总价(元)</th>
+                                                <th>图片</th>
+                                                <th>操作</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td><input class="form-control" type="text" value="炒果条"></td>
+                                                <td><select class="form-control"><option>早餐</option><option>下午茶</option><option>晚餐</option></select></td>
+                                                <td><input class="form-control" type="text" value="9"></td>
+                                                <td><input class="form-control" type="text" value="99"></td>
+                                                <td><input class="form-control" class="form-control" type="file"></td>
+                                                <td><a>修改</a>|<a>删除</a></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td><input class="form-control" type="text" value="蛋炒饭"></td>
+                                                <td><select class="form-control"><option>早餐</option><option>下午茶</option><option>晚餐</option></select></td>
+                                                <td><input class="form-control" type="text" value="10"></td>
+                                                <td><input class="form-control" type="text" value="110"></td>
+                                                <td><input class="form-control" class="form-control" type="file"></td>
+                                                <td><a>修改</a>|<a>删除</a></td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                        <button type="button" class="btn btn-default">添加一行</button>
+                                        <script src="../js/pagebar.js"></script>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingThree">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            优惠管理
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                    <div class="panel-body">
+                                        <table class="table">
+                                            <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>优惠类别</th>
+                                                <th>优惠内容</th>
+                                                <th>使用范围</th>
+                                                <th>期限</th>
+                                                <th>操作</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td><select class="form-control"><option>满减</option><option>折扣</option><option>现金券</option></select></td>
+                                                <td><select class="form-control"><option>满100减50</option><option>满200减110</option></select></td>
+                                                <td><select class="form-control"><option>仅本商家使用</option><option>所有商家适用</option></select></td>
+                                                <td><input class="form-control" type="date" value="2018-12-31"></td>
+                                                <td><a href="javascript:confirm('确定删除吗')">删除</a></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td><select class="form-control"><option>满减</option><option>折扣</option><option>现金券</option></select></td>
+                                                <td><select class="form-control"><option>满100减50</option><option>满200减110</option></select></td>
+                                                <td><select class="form-control"><option>仅本商家使用</option><option>所有商家适用</option></select></td>
+                                                <td><input class="form-control" type="date" value="2018-12-31"></td>
+                                                <td><a href="javascript:confirm('确定删除吗')">删除</a></td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                        <button type="button" class="btn btn-default">添加一行</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingFour">
+                                    <h4 class="panel-title">
+                                        合计：627元
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

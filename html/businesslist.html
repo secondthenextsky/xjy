@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="../js/head.js"></script>
+    <title>商家管理</title>
+</head>
+<body>
+    <script src="../js/nav.js"></script>
+    <div style="margin-top: 60px;"></div>
+    <div class="bs-example bs-example-tabs" data-example-id="togglable-tabs">
+        <ul class="nav nav-tabs" id="myTabs" role="tablist">
+            <li role="presentation" class="active">
+                <a href="#businesslist" id="businesslist-tab" role="tab" data-toggle="tab" aria-controls="businesslist"
+                   aria-expanded="true">商家列表</a>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade active in" role="tabpanel" id="businesslist" aria-labelledby="businesslist-tab">
+                <div class="bs-example" data-example-id="panel-without-body-with-table" style="margin-top: 10px;">
+                    <div class="panel panel-default">
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th>商家id</th>
+                                <th>商家名称</th>
+                                <th>营业时间</th>
+                                <th>状态</th>
+                                <th>地址</th>
+                                <th>联系方式</th>
+                                <th>排名</th>
+                                <th>操作</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>阿基米</td>
+                                <td>9:00-23:00</td>
+                                <td>休息中/营业中</td>
+                                <td>东门</td>
+                                <td>13900000000</td>
+                                <td>9</td>
+                                <td><a data-toggle="modal" data-target="#updateModal" style="cursor:pointer">修改</a>|
+                                    <a href="business.html" target="_blank" style="cursor:pointer">详情</a>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <script src="../js/pagebar.js"></script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="updateModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">修改商家信息</h4>
+                </div>
+                <div class="modal-body">
+                    <table>
+                        <tr>
+                            <td>商家名称：</td>
+                            <td><input class="form-control" type="text" value="后向餐厅"></td>
+                        </tr>
+                        <tr>
+                            <td>营业时间：</td>
+                            <td><input class="form-control" type="text" value="9:00-23:00"></td>
+                        </tr>
+                        <tr>
+                            <td>状态：</td>
+                            <td><select class="form-control"><option>营业中</option><option>休息中</option></select></td>
+                        </tr>
+                        <tr>
+                            <td>地址：</td>
+                            <td><input class="form-control" type="text" value="东门左转第一家"></td>
+                        </tr>
+                        <tr>
+                            <td>联系方式：</td>
+                            <td><input class="form-control" type="text" value="13800000000"></td>
+                        </tr>
+                        <tr>
+                            <td>排名：</td>
+                            <td><select class="form-control"><option>1</option><option>2</option><option>3</option></select></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-primary">提交更改</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="../js/head.js"></script>
+    <title>Title</title>
+</head>
+<body>
+<ul class="nav nav-tabs" id="myTabs" role="tablist">
+    <li role="presentation" class="active">
+        <a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">Home</a>
+    </li>
+    <li role="presentation" class="">
+        <a href="#profile" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile" aria-expanded="false">Profile</a>
+    </li>
+    <li role="presentation" class="dropdown">
+        <a href="#" class="dropdown-toggle" id="myTabDrop1" data-toggle="dropdown" aria-controls="myTabDrop1-contents" aria-expanded="false">Dropdown <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="myTabDrop1" id="myTabDrop1-contents">
+            <li class="">
+                <a href="#dropdown1" role="tab" id="dropdown1-tab" data-toggle="tab" aria-controls="dropdown1" aria-expanded="false">@fat</a>
+            </li>
+            <li>
+                <a href="#dropdown2" role="tab" id="dropdown2-tab" data-toggle="tab" aria-controls="dropdown2" aria-expanded="false">@mdo</a>
+            </li>
+        </ul>
+    </li>
+</ul>
+
+<div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade active in" role="tabpanel" id="home" aria-labelledby="home-tab">aaaaaaaaaaaa</div>
+    <div class="tab-pane fade" role="tabpanel" id="profile" aria-labelledby="profile-tab">bbbbbbbbbbbbbbbbbb</div>
+    <div class="tab-pane fade" role="tabpanel" id="dropdown1" aria-labelledby="dropdown1-tab">cccccccccccccc</div>
+    <div class="tab-pane fade" role="tabpanel" id="dropdown2" aria-labelledby="dropdown2-tab">ccccccccccccccccccccccccc</div>
+</div>
+</body>
+</html>
